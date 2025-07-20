@@ -56,8 +56,8 @@ const HeroSection = () => {
         <div className="hero-image-wrapper mt-5 md:mt-0">
           <div ref={imageRef} className="hero-image">
             <Image
-              src={"/prepai-banner.png"}
-              width={1280}
+              src={"/prepai-banner2.png"}
+              width={1200}
               height={720}
               alt="Banner Image"
               priority
