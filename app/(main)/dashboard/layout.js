@@ -8,7 +8,7 @@ const layout = ({ children }) => {
         <h1 className="text-6xl font-bold gradient-title">Industry Insights</h1>
       </div>
       <Suspense
-        fallback={<RingLoader className="mt-4" width={"100%"} color="gray" />}
+        fallback={<RingLoader className="mt-4" width={"100%"} color="white" />}
       >
         {children}
       </Suspense>
