@@ -18,7 +18,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { onboardingSchema } from "@/lib/validationSchema";
+import { onboardingSchema } from "@/lib/ZodvalidationSchemas";
 import { industries } from "@/data/industries";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";

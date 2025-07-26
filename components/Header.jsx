@@ -1,3 +1,4 @@
+
 import {
   SignedIn,
   SignedOut,
@@ -86,7 +87,7 @@ const Header = async () => {
         </SignedIn>
 
           <SignedOut>
-            <SignInButton>
+            <SignInButton forceRedirectUrl="/onboarding">
               <Button variant={"outline"}>Sign In</Button>
             </SignInButton>
           </SignedOut>

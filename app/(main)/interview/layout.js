@@ -5,7 +5,11 @@ const layout = ({ children }) => {
   return (
     <div className="px-5">
       <Suspense
-        fallback={<RingLoader className="mt-4" width={"100%"} color="white" />}
+        fallback={
+          <div className="flex items-center justify-center h-screen">
+            <RingLoader color="white" />
+          </div>
+        }
       >
         {children}
       </Suspense>
