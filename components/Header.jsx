@@ -3,6 +3,7 @@ import {
   SignedIn,
   SignedOut,
   SignInButton,
+  SignUpButton,
   UserButton,
 } from "@clerk/nextjs";
 import {
@@ -87,9 +88,12 @@ const Header = async () => {
         </SignedIn>
 
           <SignedOut>
-            <SignInButton forceRedirectUrl="/onboarding">
-              <Button variant={"outline"}>Sign In</Button>
+            <SignInButton>
+              <Button variant={"ghost"}>Sign In</Button>
             </SignInButton>
+            <SignUpButton forceRedirectUrl="/onboarding">
+              <Button variant={"outline"}>Sign Up</Button>
+            </SignUpButton>
           </SignedOut>
           <SignedIn>
             <UserButton 

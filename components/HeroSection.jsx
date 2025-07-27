@@ -37,7 +37,7 @@ const HeroSection = () => {
           </h1>
           <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl">
             "AI-powered career toolkit for resumes, cover letters, insights, and
-            quizzes."
+            Interview Prepration."
           </p>
         </div>
         <div className="flex justify-center space-x-4">
@@ -46,7 +46,7 @@ const HeroSection = () => {
               Get Started
             </Button>
           </Link>
-          <Link href={"/dashboard"}>
+          <Link href={"https://github.com/Shashank-Script/PrepAI"}>
             <Button size="lg" variant="outline" className="px-8 cursor-pointer">
               Watch Demo
             </Button>
