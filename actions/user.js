@@ -2,8 +2,9 @@
 
 import { auth } from "@clerk/nextjs/server";
 import { db } from "@/lib/prisma";
-import { success } from "zod";
 import { generateAiInsights } from "./dashboard";
+import { redirect } from "next/navigation";
+
 
 export async function updateUser(data) {
   const { userId } = await auth();
@@ -68,7 +69,7 @@ export async function updateUser(data) {
 export async function getUserOnboardingStatus() {
   const { userId } = await auth();
   if (!userId) {
-    throw new Error("Unauthorized");
+    redirect("/sign-in");
   }
   const user = await db.user.findUnique({
     where: {
